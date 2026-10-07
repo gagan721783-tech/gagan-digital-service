@@ -3,36 +3,380 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Gagan Digital Service - Website, Graphic Design, Social Media Design aur Digital Services.">
+
 <title>Gagan Digital Service</title>
+
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f4f6f8;color:#222;text-align:center}
-header{background:#111827;color:white;padding:32px 16px}
-header h1{margin:0 0 10px;font-size:34px}
-header p{margin:0;color:#dbeafe;font-size:18px}
-.container{max-width:900px;margin:auto;padding:24px 16px}
-.intro{font-size:17px;line-height:1.6;margin-bottom:22px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.card{display:block;text-decoration:none;color:#222;background:white;padding:24px 18px;border-radius:18px;box-shadow:0 5px 18px #ddd}
-.card h2{margin:0 0 12px;color:#1677e8;font-size:21px}
-.card p{margin:0;line-height:1.6;color:#555}
-.tag{display:inline-block;margin-top:15px;padding:7px 12px;border-radius:20px;background:#eaf3ff;color:#1677e8;font-size:13px}
-.whatsapp{display:inline-block;margin:28px 0 10px;background:#25D366;color:white;padding:15px 28px;border-radius:12px;font-size:18px;font-weight:bold;text-decoration:none}
-footer{padding:25px 15px;color:#666;font-size:14px}
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f5f7fb;
+  color:#172033;
+}
+
+header{
+  background:linear-gradient(135deg,#0f172a,#1d4ed8);
+  color:white;
+  padding:54px 18px 46px;
+  text-align:center;
+}
+
+.badge{
+  display:inline-block;
+  background:rgba(255,255,255,.13);
+  padding:8px 14px;
+  border-radius:30px;
+  font-size:13px;
+  margin-bottom:16px;
+}
+
+header h1{
+  margin:0 0 12px;
+  font-size:38px;
+  line-height:1.15;
+}
+
+header p{
+  margin:0 auto 24px;
+  color:#dbeafe;
+  font-size:18px;
+  line-height:1.5;
+  max-width:700px;
+}
+
+.btn{
+  display:inline-block;
+  text-decoration:none;
+  border-radius:12px;
+  padding:14px 22px;
+  font-weight:bold;
+}
+
+.btn-whatsapp{
+  background:#25D366;
+  color:white;
+}
+
+.container{
+  max-width:980px;
+  margin:auto;
+  padding:30px 16px;
+}
+
+.intro{
+  text-align:center;
+  font-size:18px;
+  line-height:1.7;
+  color:#4b5563;
+  max-width:760px;
+  margin:0 auto 30px;
+}
+
+.section-title{
+  text-align:center;
+  margin:38px 0 20px;
+}
+
+.section-title h2{
+  margin:0 0 7px;
+  font-size:28px;
+}
+
+.section-title p{
+  margin:0;
+  color:#6b7280;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
+}
+
+.card{
+  background:white;
+  padding:24px 20px;
+  border-radius:20px;
+  box-shadow:0 8px 25px rgba(15,23,42,.08);
+  text-align:center;
+  border:1px solid #eef2f7;
+}
+
+.card h3{
+  margin:0 0 10px;
+  color:#1266d6;
+  font-size:21px;
+}
+
+.card p{
+  margin:0 0 18px;
+  color:#5b6472;
+  line-height:1.6;
+}
+
+.mini{
+  display:inline-block;
+  background:#eef5ff;
+  color:#1266d6;
+  padding:8px 12px;
+  border-radius:20px;
+  font-size:13px;
+  text-decoration:none;
+}
+
+.why{
+  background:#fff;
+  border-radius:20px;
+  padding:24px;
+  box-shadow:0 8px 25px rgba(15,23,42,.07);
+  margin-top:28px;
+}
+
+.why div{
+  padding:12px 0;
+  border-bottom:1px solid #edf0f5;
+  line-height:1.5;
+}
+
+.why div:last-child{
+  border-bottom:0;
+}
+
+.contact{
+  background:linear-gradient(135deg,#0f172a,#1e40af);
+  color:#fff;
+  text-align:center;
+  border-radius:24px;
+  padding:32px 20px;
+  margin:34px 0;
+}
+
+.contact h2{
+  margin:0 0 10px;
+  font-size:28px;
+}
+
+.contact p{
+  color:#dbeafe;
+  line-height:1.6;
+  margin:0 0 20px;
+}
+
+footer{
+  text-align:center;
+  padding:25px 15px;
+  color:#6b7280;
+  font-size:14px;
+}
+
+@media(max-width:520px){
+
+  header h1{
+    font-size:32px;
+  }
+
+  header{
+    padding-top:42px;
+  }
+
+  .container{
+    padding-top:25px;
+  }
+
+  .intro{
+    font-size:16px;
+  }
+
+  .section-title h2{
+    font-size:25px;
+  }
+}
 </style>
 </head>
+
 <body>
-<header><h1>Gagan Digital Service</h1><p>Professional Digital Services 🚀</p></header>
-<div class="container">
-<p class="intro">Hum aapke business ko online grow karne ke liye professional website, graphic design, social media design aur digital services provide karte hain.</p>
-<div class="cards">
-<a class="card" href="https://api.whatsapp.com/send?phone=918076593933&text=Namaste%20Gagan%20Digital%20Service%20se%20Website%20Design%20ke%20baare%20mein%20jaankari%20chahiye." target="_blank"><h2>🌐 Website Design</h2><p>Professional aur mobile-friendly websites banwayein.</p><span class="tag">Website ke liye Contact Karein</span></a>
-<a class="card" href="https://api.whatsapp.com/send?phone=918076593933&text=Namaste%20Gagan%20Digital%20Service%20se%20Graphic%20Design%20ke%20baare%20mein%20jaankari%20chahiye." target="_blank"><h2>🎨 Graphic Design</h2><p>Logo, poster, banner, visiting card aur business designs.</p><span class="tag">Graphic Design ke liye Contact Karein</span></a>
-<a class="card" href="https://api.whatsapp.com/send?phone=918076593933&text=Namaste%20Gagan%20Digital%20Service%20se%20Social%20Media%20Design%20ke%20baare%20mein%20jaankari%20chahiye." target="_blank"><h2>📱 Social Media Design</h2><p>Instagram, Facebook aur WhatsApp ke liye attractive designs.</p><span class="tag">Social Media ke liye Contact Karein</span></a>
-<a class="card" href="https://api.whatsapp.com/send?phone=918076593933&text=Namaste%20Gagan%20Digital%20Service%20se%20Digital%20Services%20ke%20baare%20mein%20jaankari%20chahiye." target="_blank"><h2>💻 Digital Services</h2><p>Online business setup, digital solutions aur business support.</p><span class="tag">Digital Service ke liye Contact Karein</span></a>
-</div>
-<a class="whatsapp" href="https://api.whatsapp.com/send?phone=918076593933&text=Namaste%20Gagan%20Digital%20Service%20se%20sampark%20karna%20hai." target="_blank">💬 WhatsApp Me</a>
-</div>
-<footer>© 2026 Gagan Digital Service • All Rights Reserved</footer>
+
+<header>
+
+  <span class="badge">
+    🚀 Professional Digital Services
+  </span>
+
+  <h1>
+    Gagan Digital Service
+  </h1>
+
+  <p>
+    Aapke business ko online grow karne ke liye
+    simple, professional aur mobile-friendly digital solutions.
+  </p>
+
+  <a class="btn btn-whatsapp"
+  href="https://api.whatsapp.com/send?phone=918076593933&text=Namaste%20Gagan%20Digital%20Service%20se%20baat%20karni%20hai."
+  target="_blank">
+    💬 WhatsApp Par Baat Karein
+  </a>
+
+</header>
+
+<main class="container">
+
+  <p class="intro">
+    Hum professional website, graphic design,
+    social media design aur digital services provide karte hain.
+    Apne business ke liye service jaanne ke liye WhatsApp par message karein.
+  </p>
+
+  <div class="section-title">
+    <h2>💼 Hamari Services</h2>
+    <p>Aapke business ke liye useful digital services</p>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>🌐 Website Design</h3>
+
+      <p>
+        Professional aur mobile-friendly websites
+        jo aapke business ko online present karein.
+      </p>
+
+      <a class="mini"
+      href="https://api.whatsapp.com/send?phone=918076593933&text=Namaste%20Website%20Design%20ke%20baare%20mein%20jaankari%20chahiye."
+      target="_blank">
+        Details ke liye WhatsApp
+      </a>
+    </div>
+
+
+    <div class="card">
+
+      <h3>🎨 Graphic Design</h3>
+
+      <p>
+        Logo, poster, banner, visiting card
+        aur business ke liye attractive designs.
+      </p>
+
+      <a class="mini"
+      href="https://api.whatsapp.com/send?phone=918076593933&text=Namaste%20Graphic%20Design%20ke%20baare%20mein%20jaankari%20chahiye."
+      target="_blank">
+        Details ke liye WhatsApp
+      </a>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>📱 Social Media Design</h3>
+
+      <p>
+        Instagram, Facebook aur WhatsApp
+        ke liye attractive social media designs.
+      </p>
+
+      <a class="mini"
+      href="https://api.whatsapp.com/send?phone=918076593933&text=Namaste%20Social%20Media%20Design%20ke%20baare%20mein%20jaankari%20chahiye."
+      target="_blank">
+        Details ke liye WhatsApp
+      </a>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>💻 Digital Services</h3>
+
+      <p>
+        Online business setup, digital solutions
+        aur business support ke liye contact karein.
+      </p>
+
+      <a class="mini"
+      href="https://api.whatsapp.com/send?phone=918076593933&text=Namaste%20Digital%20Services%20ke%20baare%20mein%20jaankari%20chahiye."
+      target="_blank">
+        Details ke liye WhatsApp
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <div class="section-title">
+
+    <h2>⭐ Why Choose Us?</h2>
+
+    <p>
+      Simple aur customer-friendly service
+    </p>
+
+  </div>
+
+
+  <div class="why">
+
+    <div>
+      📱 <b>Mobile Friendly</b> —
+      Website phone par bhi achhi dikhegi.
+    </div>
+
+    <div>
+      🎯 <b>Professional Design</b> —
+      Business ko clean aur professional look.
+    </div>
+
+    <div>
+      💬 <b>Easy Contact</b> —
+      Direct WhatsApp se enquiry.
+    </div>
+
+    <div>
+      🤝 <b>Business Focused</b> —
+      Aapke business ki zarurat ke hisab se solution.
+    </div>
+
+  </div>
+
+
+  <div class="contact">
+
+    <h2>
+      📲 Apne Business Ke Liye Baat Karein
+    </h2>
+
+    <p>
+      Website, graphic design ya social media design chahiye?
+      WhatsApp par message karein.
+    </p>
+
+    <a class="btn btn-whatsapp"
+    href="https://api.whatsapp.com/send?phone=918076593933&text=Namaste%20Gagan%20Digital%20Service%20se%20apne%20business%20ke%20liye%20service%20ke%20baare%20mein%20baat%20karni%20hai."
+    target="_blank">
+      💬 WhatsApp Now
+    </a>
+
+  </div>
+
+</main>
+
+
+<footer>
+  © 2026 Gagan Digital Service • All Rights Reserved
+</footer>
+
 </body>
 </html>
